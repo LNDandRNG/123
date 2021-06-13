@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>实验报告</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="css/style4.css">
+  <!-- Your custom styles (optional) -->
+</head>
+<body>
+<h1>实验报告</h1>
+<p> 
+  我所构建的网站是一个基于CSS样式美化,一些javascript代码以及MDB结构框架所结合而成的静态网站，我所
+做的内容包括NAV导航条如何在静态页面中插入音乐并自动播放，如何使页面之间相互跳转，利用一些javas
+script代码做出旋转星空以及运用html中的canvas元素使用JavaScript 在网页上绘制图像。比如绘制
+流星雨、樱花掉落等。
+<br>
+<pre>                                           开发过程</pre>
+1.导航条的制作：nav的制作我借鉴了老师MDBootstrap第三个模板，老师的第三个模板中的导航包括固定于顶部
+自动隐藏导航栏、通过id实现本页面之中的跳转（其中smooth-scroll插件就是使导航实现本页面的平滑跳转），
+以及定位标签div和ul无序列表的使用等内容。<br>
+2.栅格系统布局：数据行(.row)必须包含在容器(.container)中以便为其赋予合适的对齐方式和内距(padding)
+在行(.row)中可以添加列(.column)，但列数之和不能超过平分的总列数,一般用的总列数为十二这样就可以实
+现图片在左文字在右，或者文字在做图片在右这些都是通过容器实现的。<br>
+3.html中一些简单语法的应用；比如通过使用超链接a href="#"进行网页间的跳转当然由于是静态网页所以相当
+于同一个文件夹中的html相互跳转，当然你也可以通过超链接来引入你的CSS框架和一些所必须要的javascript。
+当在html也运用了一些文本标签比如p、pre，p就单纯的是一个文本标签，pre则可以保证文本的内容形式与你在
+html书写的一样。<br>
+4.还有一些需要javascript语言才能做出来的效果我是通过上CSDN等网站查找得出。<br>
+<pre>                                           问题及解决</pre>
+1.我最初在页面中插入的音乐是需要手动的，这样大大减小了观赏性，于是就考虑如何能使音乐在你打开页面后就
+能自动播放，通过上网的查找发现audio autoplay="autopaly" loop="loop" id="audios"source src="1.flac" 
+type="audio/mp3" 在这串代码的基础上加入javascript的处罚事件代码即可完成音乐的自动播放。<br>
+2.旋转星空与樱花凋落的制作,在它们的制作方面我遇到了很多问题比如星空中星星的定位，星星的大小、星星旋转的速度、
+樱花凋落从哪开始，超过界限后是否重复，等等这些代码如何去写，最后是通过上网查找大神的做法，自己再改一些完成的
+大神的做法一般都是用javascript循环、指针、数组实现的。<br>
+3.如何在这些绘图下嵌入文字和图片，因为这种不属于CSS背景结构相当于一种html,所以当你输入文字或插入图片的时候
+这些文字和图片很可能就会被你的星空背景或樱花坠落背景所覆盖，我是通过添加div标签解决的这种问题，然后再在CSS
+添一些结构框架的约束完成的<br>
+<pre>                                             总结   </pre>
+1.通过本次实践，我初步熟悉了一些静态网站的制作，对html基本的语法功能有所了解，能够构建比较简单的CSS背景（由于没有学过艺术所以CSS颜色渐变不太擅长）
+对javascript语法有了初步的了解，比如事件的添加，指针等等。<br>
+2.可以运用自己所学的知识做出一些静态网站页面，但是由于缺少艺术细胞，html的构架可能不是很少，需要参考他人的结构框架。
+
+</p>
+</body> 
+</body>  
+</html>

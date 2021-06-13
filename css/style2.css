@@ -1,0 +1,107 @@
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    font-size:xx-large;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+body {
+    height: 100vh;
+    background: radial-gradient(200% 100% at bottom center, #f7f7b6, #e96f92, #75517d, #1b2947);
+    background: radial-gradient(220% 105% at top center, #1b2947 10%, #75517d 40%, #e96f92 65%, #f7f7b6);
+    background-position:no-repeat;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+pre {
+    color: white;
+    font-size:large;
+}
+h1 {
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+h1:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    margin: 28px auto -2px;
+    background-color: currentcolor;
+}
+h1,
+p {
+    margin: 20px 0;
+    font-size:smaller;
+}
+.content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 660px;
+    padding: 0 30px;
+    text-align: center;
+    -webkit-transform: translate(-50%, 50vh);
+    transform: translate(-50%, 50vh);
+    opacity: 0;
+    -webkit-animation: 0.75s 0.75s forwards slide_in;
+    animation: 0.75s 0.75s forwards slide_in;
+
+}
+.btn {
+    background-color: violet;
+    color:white
+}
+@-webkit-keyframes slide_in {
+    100% {
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+@keyframes slide_in {
+    100% {
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+h3 {
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+button {width: 60px ;            
+    height:80px ;            
+    font-size:14px;          
+    background-color: #e96f92;           
+    box-shadow: #1b2947;
+}

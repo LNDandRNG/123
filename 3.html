@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Material Design Bootstrap -->
+        <link rel="stylesheet" href="css/mdb.min.css">     
+<meta charset="utf-8">
+<title>射手座</title>
+
+<style>
+html,body{
+    margin:0px;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background: radial-gradient(200% 100% at top left, #d89503,#da7605 5%,#070025,#080808)
+
+}
+
+#canvas{
+    width:100%;
+    height:100%;
+}
+p {
+    top: 70px;
+    color:#c07300
+
+}
+div.btncg {
+    position:fixed;
+
+right: 100px;;
+
+top: 70px;
+
+}
+div.btnbg {
+
+position:fixed;
+
+left:0;
+
+top: 70px;
+
+}
+h2 {
+    color:#da7605
+}
+</style>
+</head>
+    
+    <body>
+        <audio autoplay="autopaly" loop="loop" id="audios">
+            <source src="3.flac" type="audio/mp3" />
+            </audio>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" >
+                <ul class="navbar-nav mr-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="1.html" >双子座</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="2.html" >白羊座</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="3.html" >射手座</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="4.html" >水瓶座</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="5.html" >双鱼座</a>
+                  </li>
+                </ul>
+                <!-- Social Icon  -->
+                <ul class="navbar-nav nav-flex-icons">
+                  <li class="nav-item">
+                    <a class="nav-link">
+                      <i class="fab fa-facebook-f light-green-text-2"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">
+                      <i class="fab fa-twitter light-green-text-2"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">
+                      <i class="fab fa-instagram light-green-text-2"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <canvas id="canvas" width="825" height="631"></canvas>
+          <div class="btnbg">
+            <div class="col-md-6 mb-4">
+                <h2>星座传说</h2>
+                <p>在遥远古希腊的大草原中，驰骋着一批半人半兽的族群，这是一个生性凶猛的族群。“半人半兽”代表着理性与非理性、人性与兽性间的矛盾挣扎，这就是“人马族”。
+
+                    人马族里唯独的一个例外--奇伦。奇伦虽也是人马族的一员，但生性善良，对待朋友尤以坦率著称，所以奇伦在族里十分受人尊敬，有一天，希腊最伟大的英雄--赫丘力，来拜访他的朋友，这位幼年即用双手扼死巨蛇的超级大力士，一听说人马族也是一个擅长酿酒的民族，想到香醇的佳酿，也不管这酒是人马族的共有财产，便强迫他的朋友偷来给他享用，否则就打死他，所有人都知道，赫丘力是世间最强壮的人，连太阳神阿波罗都得让他三分，迫于无奈，这个人马族人只有照着吩咐的意思办了。
+                    
+                    正当赫丘力沉醉在酒的芬芳甘醇之际，酒的香气早已弥漫了整个部落，所有人马族都厉声斥责赫丘力，赫丘力怒气冲天，拿着他的神弓奋力追杀人马族，人马族们仓皇的逃至最受人尊敬的族人--奇伦家中，这时奇伦在家中听见了屋外万蹄奔踏及惊慌的求救声，他连想都没想，开门直奔出去，说时迟那时快，赫丘力拉满弓瞬间射出去，竟然射中了奇伦的心脏，善良无辜的奇伦为朋友牺牲了自己的生命。
+                    
+                    天神宙斯听见了人马的嘶喊，于是他双手托起奇伦的尸体，往天空一掷，奇伦瞬间幻化成数颗闪耀的星星，形体就如人马族，从此为了纪念奇伦，这个星座就称为“射手座”，也叫做“人马座”。</p> 
+                  优点：丰富的幽默感、心胸开阔，诚恳宽厚、行动力强、行事认真、思想开明、适应力强、有正义感；<br>
+                  缺点：心直口快、固执独断、偏激、过度理想化、反复无常、喜怒太形于色、盲目而过分乐观；
+            </div>  
+          <div class="btncg">
+            <div class="col-md-12 mb-4">
+                <a href="6.html"class="view overlay z-depth-1-half">
+                <img src="https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=11824816,1751424611&fm=26&gp=0.jpg" height="450" width="800" class="card-img-top" alt="" />
+                </a> 
+                
+            </div>
+        </div> 
+        <script>
+
+function initVars(){
+
+    pi=Math.PI;
+    ctx=canvas.getContext("2d");
+    canvas.width=canvas.clientWidth;
+    canvas.height=canvas.clientHeight;
+    cx=canvas.width/2;
+    cy=canvas.height/2;
+    playerZ=-25;
+    playerX=playerY=playerVX=playerVY=playerVZ=pitch=yaw=pitchV=yawV=0;
+    scale=600;
+    seedTimer=0;seedInterval=5,seedLife=100;gravity=.02;
+    seeds=new Array();
+    sparkPics=new Array();
+    s="https://cantelope.org/NYE/";
+    for(i=1;i<=10;++i){
+        sparkPic=new Image();
+        sparkPic.src=s+"spark"+i+".png";
+        sparkPics.push(sparkPic);
+    }
+    sparks=new Array();
+    pow1=new Audio(s+"pow1.ogg");
+    pow2=new Audio(s+"pow2.ogg");
+    pow3=new Audio(s+"pow3.ogg");
+    pow4=new Audio(s+"pow4.ogg");
+    frames = 0;
+}
+
+function rasterizePoint(x,y,z){
+
+    var p,d;
+    x-=playerX;
+    y-=playerY;
+    z-=playerZ;
+    p=Math.atan2(x,z);
+    d=Math.sqrt(x*x+z*z);
+    x=Math.sin(p-yaw)*d;
+    z=Math.cos(p-yaw)*d;
+    p=Math.atan2(y,z);
+    d=Math.sqrt(y*y+z*z);
+    y=Math.sin(p-pitch)*d;
+    z=Math.cos(p-pitch)*d;
+    var rx1=-1000,ry1=1,rx2=1000,ry2=1,rx3=0,ry3=0,rx4=x,ry4=z,uc=(ry4-ry3)*(rx2-rx1)-(rx4-rx3)*(ry2-ry1);
+    if(!uc) return {x:0,y:0,d:-1};
+    var ua=((rx4-rx3)*(ry1-ry3)-(ry4-ry3)*(rx1-rx3))/uc;
+    var ub=((rx2-rx1)*(ry1-ry3)-(ry2-ry1)*(rx1-rx3))/uc;
+    if(!z)z=.000000001;
+    if(ua>0&&ua<1&&ub>0&&ub<1){
+        return {
+            x:cx+(rx1+ua*(rx2-rx1))*scale,
+            y:cy+y/z*scale,
+            d:Math.sqrt(x*x+y*y+z*z)
+        };
+    }else{
+        return {
+            x:cx+(rx1+ua*(rx2-rx1))*scale,
+            y:cy+y/z*scale,
+            d:-1
+        };
+    }
+}
+
+function spawnSeed(){
+    
+    seed=new Object();
+    seed.x=-50+Math.random()*100;
+    seed.y=25;
+    seed.z=-50+Math.random()*100;
+    seed.vx=.1-Math.random()*.2;
+    seed.vy=-1.5;//*(1+Math.random()/2);
+    seed.vz=.1-Math.random()*.2;
+    seed.born=frames;
+    seeds.push(seed);
+}
+
+function splode(x,y,z){
+    
+    t=5+parseInt(Math.random()*150);
+    sparkV=1+Math.random()*2.5;
+    type=parseInt(Math.random()*3);
+    switch(type){
+        case 0:
+            pic1=parseInt(Math.random()*10);
+            break;
+        case 1:
+            pic1=parseInt(Math.random()*10);
+            do{ pic2=parseInt(Math.random()*10); }while(pic2==pic1);
+            break;
+        case 2:
+            pic1=parseInt(Math.random()*10);
+            do{ pic2=parseInt(Math.random()*10); }while(pic2==pic1);
+            do{ pic3=parseInt(Math.random()*10); }while(pic3==pic1 || pic3==pic2);
+            break;
+    }
+    for(m=1;m<t;++m){
+        spark=new Object();
+        spark.x=x; spark.y=y; spark.z=z;
+        p1=pi*2*Math.random();
+        p2=pi*Math.random();
+        v=sparkV*(1+Math.random()/6)
+        spark.vx=Math.sin(p1)*Math.sin(p2)*v;
+        spark.vz=Math.cos(p1)*Math.sin(p2)*v;
+        spark.vy=Math.cos(p2)*v;
+        switch(type){
+            case 0: spark.img=sparkPics[pic1]; break;
+            case 1:
+                spark.img=sparkPics[parseInt(Math.random()*2)?pic1:pic2];
+                break;
+            case 2:
+                switch(parseInt(Math.random()*3)){
+                    case 0: spark.img=sparkPics[pic1]; break;
+                    case 1: spark.img=sparkPics[pic2]; break;
+                    case 2: spark.img=sparkPics[pic3]; break;
+                }
+                break;
+        }
+        spark.radius=25+Math.random()*50;
+        spark.alpha=1;
+        spark.trail=new Array();
+        sparks.push(spark);
+    }
+    switch(parseInt(Math.random()*4)){
+        case 0:	pow=new Audio(s+"pow1.ogg"); break;
+        case 1:	pow=new Audio(s+"pow2.ogg"); break;
+        case 2:	pow=new Audio(s+"pow3.ogg"); break;
+        case 3:	pow=new Audio(s+"pow4.ogg"); break;
+    }
+    d=Math.sqrt((x-playerX)*(x-playerX)+(y-playerY)*(y-playerY)+(z-playerZ)*(z-playerZ));
+    pow.volume=1.5/(1+d/10);
+    pow.play();
+}
+
+function doLogic(){
+    
+    if(seedTimer<frames){
+        seedTimer=frames+seedInterval*Math.random()*10;
+        spawnSeed();
+    }
+    for(i=0;i<seeds.length;++i){
+        seeds[i].vy+=gravity;
+        seeds[i].x+=seeds[i].vx;
+        seeds[i].y+=seeds[i].vy;
+        seeds[i].z+=seeds[i].vz;
+        if(frames-seeds[i].born>seedLife){
+            splode(seeds[i].x,seeds[i].y,seeds[i].z);
+            seeds.splice(i,1);
+        }
+    }
+    for(i=0;i<sparks.length;++i){
+        if(sparks[i].alpha>0 && sparks[i].radius>5){
+            sparks[i].alpha-=.01;
+            sparks[i].radius/=1.02;
+            sparks[i].vy+=gravity;
+            point=new Object();
+            point.x=sparks[i].x;
+            point.y=sparks[i].y;
+            point.z=sparks[i].z;
+            if(sparks[i].trail.length){
+                x=sparks[i].trail[sparks[i].trail.length-1].x;
+                y=sparks[i].trail[sparks[i].trail.length-1].y;
+                z=sparks[i].trail[sparks[i].trail.length-1].z;
+                d=((point.x-x)*(point.x-x)+(point.y-y)*(point.y-y)+(point.z-z)*(point.z-z));
+                if(d>9){
+                    sparks[i].trail.push(point);
+                }
+            }else{
+                sparks[i].trail.push(point);
+            }
+            if(sparks[i].trail.length>5)sparks[i].trail.splice(0,1);				
+            sparks[i].x+=sparks[i].vx;
+            sparks[i].y+=sparks[i].vy;
+            sparks[i].z+=sparks[i].vz;
+            sparks[i].vx/=1.075;
+            sparks[i].vy/=1.075;
+            sparks[i].vz/=1.075;
+        }else{
+            sparks.splice(i,1);
+        }
+    }
+    p=Math.atan2(playerX,playerZ);
+    d=Math.sqrt(playerX*playerX+playerZ*playerZ);
+    d+=Math.sin(frames/80)/1.25;
+    t=Math.sin(frames/200)/40;
+    playerX=Math.sin(p+t)*d;
+    playerZ=Math.cos(p+t)*d;
+    yaw=pi+p+t;
+}
+
+function rgb(col){
+    
+    var r = parseInt((.5+Math.sin(col)*.5)*16);
+    var g = parseInt((.5+Math.cos(col)*.5)*16);
+    var b = parseInt((.5-Math.sin(col)*.5)*16);
+    return "#"+r.toString(16)+g.toString(16)+b.toString(16);
+}
+
+function draw(){
+    
+    ctx.clearRect(0,0,cx*2,cy*2);
+    
+    ctx.fillStyle="#ff8";
+    for(i=-100;i<100;i+=3){
+        for(j=-100;j<100;j+=4){
+            x=i;z=j;y=25;
+            point=rasterizePoint(x,y,z);
+            if(point.d!=-1){
+                size=250/(1+point.d);
+                d = Math.sqrt(x * x + z * z);
+                a = 0.75 - Math.pow(d / 100, 6) * 0.75;
+                if(a>0){
+                    ctx.globalAlpha = a;
+                    ctx.fillRect(point.x-size/2,point.y-size/2,size,size);				
+                }
+            }
+        }
+    }
+    ctx.globalAlpha=1;
+    for(i=0;i<seeds.length;++i){
+        point=rasterizePoint(seeds[i].x,seeds[i].y,seeds[i].z);
+        if(point.d!=-1){
+            size=200/(1+point.d);
+            ctx.fillRect(point.x-size/2,point.y-size/2,size,size);
+        }
+    }
+    point1=new Object();
+    for(i=0;i<sparks.length;++i){
+        point=rasterizePoint(sparks[i].x,sparks[i].y,sparks[i].z);
+        if(point.d!=-1){
+            size=sparks[i].radius*200/(1+point.d);
+            if(sparks[i].alpha<0)sparks[i].alpha=0;
+            if(sparks[i].trail.length){
+                point1.x=point.x;
+                point1.y=point.y;
+                switch(sparks[i].img){
+                    case sparkPics[0]:ctx.strokeStyle="#f84";break;
+                    case sparkPics[1]:ctx.strokeStyle="#84f";break;
+                    case sparkPics[2]:ctx.strokeStyle="#8ff";break;
+                    case sparkPics[3]:ctx.strokeStyle="#fff";break;
+                    case sparkPics[4]:ctx.strokeStyle="#4f8";break;
+                    case sparkPics[5]:ctx.strokeStyle="#f44";break;
+                    case sparkPics[6]:ctx.strokeStyle="#f84";break;
+                    case sparkPics[7]:ctx.strokeStyle="#84f";break;
+                    case sparkPics[8]:ctx.strokeStyle="#fff";break;
+                    case sparkPics[9]:ctx.strokeStyle="#44f";break;
+                }
+                for(j=sparks[i].trail.length-1;j>=0;--j){
+                    point2=rasterizePoint(sparks[i].trail[j].x,sparks[i].trail[j].y,sparks[i].trail[j].z);
+                    if(point2.d!=-1){
+                        ctx.globalAlpha=j/sparks[i].trail.length*sparks[i].alpha/2;
+                        ctx.beginPath();
+                        ctx.moveTo(point1.x,point1.y);
+                        ctx.lineWidth=1+sparks[i].radius*10/(sparks[i].trail.length-j)/(1+point2.d);
+                        ctx.lineTo(point2.x,point2.y);
+                        ctx.stroke();
+                        point1.x=point2.x;
+                        point1.y=point2.y;
+                    }
+                }
+            }
+            ctx.globalAlpha=sparks[i].alpha;
+            ctx.drawImage(sparks[i].img,point.x-size/2,point.y-size/2,size,size);
+        }
+    }
+}
+
+function frame(){
+
+    if(frames>100000){
+        seedTimer=0;
+        frames=0;
+    }
+    frames++;
+    draw();
+    doLogic();
+    requestAnimationFrame(frame);
+}
+
+window.addEventListener("resize",()=>{
+    canvas.width=canvas.clientWidth;
+    canvas.height=canvas.clientHeight;
+    cx=canvas.width/2;
+    cy=canvas.height/2;
+});
+
+initVars();
+frame();</script>
+<script>
+    // 将以下代码添加到js入口函数内即可
+    document.addEventListener('touchstart', function() {
+    document.getElementById('audios').play()
+    })
+    </script>
+
+</body>
+</html>

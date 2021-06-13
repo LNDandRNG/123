@@ -1,0 +1,62 @@
+/* Required for full background image */
+html,
+body {
+
+background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+background-position:no-repeat;
+color: white;
+font-family: "Montserrat", sans-serif;
+font-size: 20px;
+line-height: 30px;
+background-position: center 0;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+-moz-background-size: cover;
+-ms-background-size: cover;
+}
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse ,.page-footer{
+  background-color: #563e91 !important;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #563e91 !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.rgba-gradient {
+  background: rgba(35, 7, 77, 0.6);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.streak.streak-photo {
+  background-attachment: fixed;
+}
